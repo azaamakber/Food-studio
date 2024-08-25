@@ -1,0 +1,229 @@
+@media  (min-width:1599px){
+            
+    body {font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+            display: block;
+        }
+
+    .background {
+                    
+        background: url(istockphoto-1972371957-170667a.webp) ;
+        background-size: 100%;
+        height: 1450px;
+        
+        border-radius:10px ;            
+    }
+
+    .header {
+        display: flex;
+        height:19em;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.85);
+        position: fixed;
+    }
+    .logo {
+        width: 6.5em;
+        height: 6.5em;
+        margin-top: 22px;
+        margin-bottom: 21px;
+        margin-left: 3em;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .nav {display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        font-weight: 800;
+        }
+    .head {display: flex;
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+        font-size: 35px;
+    }
+    .head:hover {
+        background-color: grey;
+        padding: 3px;
+        border: none;
+        border-radius: 5px;
+    }
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        justify-content: center;
+        color: white;
+        height: 87em;
+        
+        background-color: rgba(31, 31, 31, 0.7);
+    }
+    
+    
+    .intro {width: 45em;
+        font-weight: 500;
+        font-size: 30px;
+
+    }
+    .welcome {display: block;
+        margin-top: 300px;
+        margin-bottom: 0;
+        font-size: 65px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .intro {
+        margin-top: 050px;
+        font-size: 40px;
+        width: 900px;
+    }
+    .order {
+        font-weight: bold;
+        font-size: 41px;
+        border: none;
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: rgba(228, 226, 226, 0.726);
+    }
+    .order:hover {
+        background-color: rgb(113, 91, 91);
+        color: white;
+    }
+    #services {
+        display: flex;
+        flex-direction: column;
+        height:195em ;
+        margin-top: 0;
+        background-color: rgba(165, 165, 165, 0.4);
+    }
+    .h22 {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: row;
+    }
+    .h2 {display: flex;
+        font-size: 75px;
+        font-weight: bolder;
+        margin: auto;
+        padding-bottom: 1em;
+        color: rgb(1, 32, 15);
+    }
+    .services1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .service {display: flex;
+        flex-direction: column;
+        width: 44em;
+        height: 55em;
+        background-color: rgba(134, 133, 133,0.4);
+        align-items: center;
+        padding-top: 1em;
+        margin-top: 40px;
+        cursor: pointer;
+    }
+    .service-img {
+        width:43em;
+        height:31em;
+    }
+    .service1 {
+        font-size: 45px;
+        font-weight: bold;
+        margin-top: 14px;
+        margin-bottom: 0;
+    }
+    .detail {
+        font-size: 40px;
+    margin-left: 12px;
+    }
+    #product {
+        height:104em;
+        background: url(product.jpeg);
+        
+        background-size: 100%;
+    }
+    .ingredients {display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        height: 104em;
+        padding-top: 9em;
+        background-color: rgba(165, 165, 165, 0.7);
+
+    }
+    .product1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 61em;
+        height: 25em;
+        margin-bottom: 40px;
+        margin-left: 37px;
+        border-radius: 10px;
+        background-color: rgba(120, 120, 120, 0.65);
+    }
+    .pic4 {
+        padding-left: 10px;
+        width: 21em;
+        height: 23em;
+        border-radius: 17px;
+    }
+    .masala {
+        font-size: 34px;
+        margin-left: 10px;
+    }
+    #contact {
+        background: url(istockphoto-1995370992-612x612.jpg);
+        
+        background-size: 100%;
+    }
+    #contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 59em;
+    }
+    .contacts {
+        margin-top: 1.5em;
+        font-weight: 900;
+        margin-bottom: 1em;
+        font-size: 65px;
+    }
+    input {
+        width: 35em;
+        height: 3em;
+        font-size: 25px;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 5px;
+        color: black;
+        font-weight: bold;
+        background-color: rgba(228, 226, 226, 0.726);
+    }
+    textarea {
+        width: 32em;
+        height: 14em;
+        font-size: 15px;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 5px;
+
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.726);
+
+    }
+    .message {color: rgb(255, 255, 255);
+        margin-left: -620px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+        font-size: 38px;
+    }
+
+}

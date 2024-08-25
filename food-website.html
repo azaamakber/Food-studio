@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food.Studio</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+                   
+        }
+        .background {
+            
+            background: url(istockphoto-1972371957-170667a.webp) ;
+            background-size: 100%;
+            height: 500px;
+            border-radius:10px ;            
+        }
+
+        .header {
+            display: flex;
+            height: 4em;
+            width: 100%;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.85);
+            position: fixed;
+        }
+        .logo {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-left: 0;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .nav {display: flex;
+            padding-left: 0;
+            margin-left:0;
+            flex-direction: row;
+            list-style: none;
+            font-weight: 700;
+            }
+        .head {
+            font-size: 0.75em;
+            margin-left:0.7em;
+            text-decoration: none;
+            color: white;
+        }
+        .head:hover {
+            background-color: grey;
+            padding: 3px;
+            border: none;
+            border-radius: 5px;
+        }
+        #home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            height: 29.4em;
+            padding-top: 2em;
+            background-color: rgba(56, 56, 56, 0.4);
+        }
+        
+        
+        .intro {margin: auto;
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 0.8em;
+
+        }
+        .order {
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: rgba(228, 226, 226, 0.726);
+        }
+        .order:hover {
+            background-color: rgb(113, 91, 91);
+            color: white;
+        }
+        #services {
+            display: flex;
+            flex-direction: column;
+            height: 1fr;
+            padding-bottom:4em ;
+            padding-top: 2em;
+            background-color: rgba(165, 165, 165, 0.4);
+        }
+        .h22 {
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .h2 {
+            margin-left: auto;
+            font-size: 38px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 1em;
+            color: rgb(1, 32, 15);
+        }
+        .services1 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .service {display: flex;
+            flex-direction: column;
+            width: 19em;
+            height: 25em;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            background-color: rgba(134, 133, 133,0.4);
+            align-items: center;
+            padding-top: 1em;
+            cursor: pointer;
+        }
+        .service-img {
+            width: 18.5em;
+            height: 12em;
+        }
+        .service1 {font-size: 26px;
+            margin-bottom: 0;
+        }
+        .detail {
+            font-size: 20px;
+        margin-left: 10px;
+        }
+        #product {
+            height: 1fr;
+            background: url(product.jpeg);
+            
+            background-size: 100%;
+        }
+        .ingredients {display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 1fr;
+            flex-wrap: wrap;
+            padding-top: 12em;
+            background-color: rgba(165, 165, 165, 0.7);
+
+        }
+        .product1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 19em;
+            margin-bottom: 35px;
+            height: 32em;
+            border-radius: 10px;
+            background-color: rgba(120, 120, 120, 0.7);
+        }
+        .pic4 {
+            padding-top: 10px;
+            width: 18em;
+            height: 16em;
+            border-radius: 17px;
+        }
+        .masala {font-size: 23px;
+            margin-left: 2px;
+        }
+        #contact {
+            background: url(istockphoto-1995370992-612x612.jpg);
+            background-size: 100%;
+            height: 1fr;
+        }
+        #contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 1fr;
+        }
+        .contacts {
+            margin-top: 2em;
+            font-weight: 800;
+            margin-bottom: 1em;
+            font-size: 35px;
+        }
+        input {
+            width: 20em;
+            height: 2em;
+            font-size: 15px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 5px;
+            color: grey;
+            font-weight: bold;
+            background-color: rgba(228, 226, 226, 0.726);
+        }
+        textarea {
+            width: 17em;
+            height: 5em;
+            font-size: 15px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 1em;
+
+            color: grey;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.726);
+
+        }
+        .message {
+            color: white;
+            margin-left: -220px;
+            margin-top: 3px;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        @media (min-width:1400px) {
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+                   
+        }
+        .background {
+            
+            background: url(istockphoto-1972371957-170667a.webp) ;
+            background-size: 100%;
+            height: 51em;
+            border-radius:10px ;            
+        }
+
+        .header {
+            display: flex;
+            height:8.5em;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.85);
+            position: fixed;
+        }
+        .logo {
+            width: 7em;
+            height: 7em;
+            margin-left: 4em;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .nav {display: flex;
+            margin-left:0;
+            flex-direction: row;
+            list-style: none;
+            font-size: 30px;
+            font-weight: 700;
+            }
+        .head {
+            margin-right: 2em;
+            text-decoration: none;
+            color: white;
+        }
+        .head:hover {
+            background-color: grey;
+            padding: 3px;
+            border: none;
+            border-radius: 5px;
+        }
+        #home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            height: 49em;
+            background-color: rgba(56, 56, 56, 0.4);
+        }
+        
+        .welcome {
+            font-size: 55px;
+            margin-top: 90px;
+        }
+        .intro {margin: auto;
+            margin-top: 12px;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 39px;
+
+        }
+        .order {
+            font-weight: bold;
+            font-size: 35px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: rgba(228, 226, 226, 0.726);
+        }
+        .order:hover {
+            background-color: rgb(113, 91, 91);
+            color: white;
+        }
+        #services {
+            display: flex;
+            flex-direction: column;
+            height:1fr ;
+            padding-top: 2em;
+            background-color: rgba(165, 165, 165, 0.4);
+        }
+        .h22 {
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .h2 {
+            margin-left: auto;
+            font-size: 58px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 1em;
+            color: rgb(1, 32, 15);
+        }
+        .services1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .service {display: flex;
+            flex-direction: column;
+            width: 22em;
+            height: 30em;
+            background-color: rgba(134, 133, 133,0.4);
+            align-items: center;
+            padding-top: 1em;
+            cursor: pointer;
+        }
+        .service-img {
+            width: 21em;
+            height: 14em;
+        }
+        .service1 {
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+        .detail {
+            font-size: 26px;
+        margin-left: 10px;
+        }
+        #product {
+            height: 1fr;
+            background: url(product.jpeg);
+            background-size: 100%;
+        }
+        .ingredients {display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 1fr;
+            padding-top: 10em;
+            background-color: rgba(165, 165, 165, 0.7);
+
+        }
+        .product1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 24em;
+            height: 39em;
+            border-radius: 10px;
+            background-color: rgba(120, 120, 120, 0.5);
+        }
+        .pic4 {
+            padding-top: 10px;
+            width: 23em;
+            height: 17em;
+            border-radius: 17px;
+        }
+        .masala {
+            font-size: 26px;
+            margin-left: 2px;
+        }
+        #contact {
+            background: url(istockphoto-1995370992-612x612.jpg);
+            background-size: 100%;
+            height: 1fr;
+        }
+        #contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 1fr;
+        }
+        .contacts {
+            margin-top: 1em;
+            font-weight: 800;
+            margin-bottom: 1em;
+            font-size: 55px;
+        }
+        input {
+            width: 35em;
+            height: 4em;
+            font-size: 25px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 5px;
+            color: grey;
+            font-weight: bold;
+            background-color: rgba(228, 226, 226, 0.726);
+        }
+        textarea {
+            width: 13em;
+            height: 5em;
+            font-size: 25px;
+            border-radius: 10px;
+            border: none;
+
+            margin-bottom: 3em;
+
+            color: grey;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.726);
+
+        }
+        .message {
+            margin-left: -160px;
+            margin-top: 3px;
+            margin-bottom: 5px;
+            font-size: 40px;
+        }
+       
+       }
+  
+    </style>
+</head>
+<body><div class="body">
+    
+    <div class="background">
+        
+        <div class="header">
+            <div ><img class="logo"src="download.png" ></div>
+            <ul class="nav">
+                <li> <a class="head" href="#home">Home</a></li>
+                <li ><a class="head" href="#services">Services</a></li>
+                <li ><a class="head" href="#product">Our Ingredients</a></li>
+                <li ><a class="head" href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+        <section id="home">
+            <h2 class="welcome">Welome to our Food Studio</h2>
+            <p class="intro">Welcome to Our Food.Studio, where fresh flavors and convenience meet at your doorstep! </p>
+            <p class="intro">We are dedicated to bringing you the finest ingredients and delicious meals, crafted</p>
+            <p class="intro"> with care and delivered with love. Taste the difference with Food.Studio
+            <p class="intro"> and let us make every meal a delight.</p>
+            </p>
+            <button class="order">Order now</button>
+        </section>
+        <section id="services">
+            <div class="h22">
+                
+            <h2 class="h2">Our Services</h2>
+            </div>
+            <div class="services1">
+            <div class="service">
+                <img class="service-img" src="service1.jpg" >
+                <h3 class="service1">Dine-In </h3>
+                <p class="detail">Enjoy a comfortable dining experience with our welcoming ambiance and attentive service. Perfect for any occasion.</p>
+            </div>
+            <div class="service">
+                <img class="service-img" src="service2.webp" >
+                <h3 class="service1">Take Away</h3>
+                <p class="detail">Grab your favorite dishes on the go. Order ahead and pick up freshly prepared meals without the wait.</p>
+            </div>
+            <div class="service">
+                <img class="service-img" src="service3.webp" >
+                <h3 class="service1">Home Delivery </h3>
+                <p class="detail">Savor our delicious meals at home. Order online or by phone, and we'll deliver hot and fresh food right to your door.</p>
+            </div>
+        </div>
+        </section>
+        <section id="product">
+            <div class="ingredients">
+               <div class="product1">
+                <img class="pic4" src="product1.jpeg">
+                <p class="masala"> <strong>National Masala</strong> offers a wide range of high-quality spices and seasoning blends, perfect for enhancing the flavor of any dish. Trusted for its rich taste and consistent quality, it's a staple in kitchens around the world.</p>
+               </div>
+               <div class="product1">
+                <img class="pic4" src="product 3.jpeg">
+                <p class="masala"> <strong>Kisan Cooking Oil</strong> is a high-quality, versatile oil perfect for all your cooking needs. It enhances the flavor of your dishes while ensuring a healthy and nutritious meal for your family. Trusted by households for its purity and rich taste, Kisan Cooking Oil is the ideal choice for frying and baking. </p>
+               </div>
+               <div class="product1">
+                <img class="pic4" src="product 4.jpeg">
+                <p class="masala"> <strong>K&N's</strong> is a leading brand specializing in high-quality, ready-to-cook and fully-cooked poultry products. Known for its commitment to quality, safety, and taste, K&N's offers a wide range of convenient and delicious chicken products perfect for any meal.</p>
+               </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div id="contacts">
+                  <h2 class="contacts">Contact us </h2>
+            <input type="text" placeholder="Enter your Name">
+            <input type="number" placeholder="Mobile no.">
+            <input type="email" placeholder="Enter your E.mail">
+            <h2 class="message">Message</h2>  
+            <textarea name="" id=""></textarea>
+        </div>
+          
+        </section>    
+    </div>
+</div>
+
+   
+</body>
+</html>
